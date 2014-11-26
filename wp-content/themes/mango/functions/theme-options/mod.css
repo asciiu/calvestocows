@@ -1,0 +1,110 @@
+#optionsframework form {
+    position: relative;
+}
+
+#optionsframework form #optionsframework-submit #save-btn {
+    position: absolute;
+    top: 0;
+    margin-left: -10px;
+    padding: 11px 0;
+    -webkit-transition: top 0.2s ease;
+    -moz-transition:    top 0.2s ease;
+    -o-transition:      top 0.2s ease;
+    transition:         top 0.2s ease;
+}
+
+#optionsframework form #optionsframework-submit #save-btn.fixed {
+    position: fixed;
+    top: 28px;
+    background: #fff;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+#optionsframework form #optionsframework-submit #save-btn input.button-primary {
+    margin-right: 12px;
+}
+
+#optionsframework .group > h3 {
+    font-size: 24px;
+    font-height: 28px;
+}
+
+#optionsframework .group {
+    padding-bottom: 0;
+}
+
+#optionsframework .group .section {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 10px 12px 24px 12px;
+}
+
+#optionsframework .group .section:last-of-type {
+    border-bottom: none;
+}
+
+#optionsframework .section.section-info {
+    padding: 10px 12px;
+    border-top: 3px solid #21759B;
+    margin-top: -1px;
+}
+
+#optionsframework .section.section-info .heading {
+    font-size: 16px;
+    line-height: 20px;
+    color: #21759B;
+    margin: 0;
+}
+
+#optionsframework .controls .of-radio-img-img {
+    border:3px solid transparent;
+    padding: 2px;
+}
+
+#optionsframework .controls .of-radio-img-selected {
+    border:3px solid #21759B;
+}
+
+#optionsframework-wrap .nav-tab:before {
+    font-family: dashicons;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 6px;
+}
+
+#optionsframework-wrap .nav-tab.generalsettings-tab:before {
+    content: "\f111";
+}
+
+#optionsframework-wrap .nav-tab.blogsettings-tab:before {
+    content: "\f464";
+}
+
+#optionsframework-wrap .nav-tab.portfoliosettings-tab:before {
+    content: "\f322";
+}
+
+#optionsframework-wrap .nav-tab.socialsettings-tab:before {
+    content: "\f307";
+}
+
+#optionsframework-wrap .nav-tab.sharingsettings-tab:before {
+    content: "\f237";
+}
+
+#optionsframework-wrap .nav-tab.brandingsettings-tab:before {
+    content: "\f177";
+}
+
+@media screen and (max-width: 782px) {
+    #optionsframework form #optionsframework-submit #save-btn.fixed {
+        top: 46px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #optionsframework form #optionsframework-submit #save-btn.fixed {
+        top: 0;
+    }
+}

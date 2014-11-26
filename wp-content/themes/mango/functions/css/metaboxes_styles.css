@@ -1,0 +1,194 @@
+.section {
+border-top: 1px solid #ccc;
+padding: 25px 0;
+clear: both;
+}
+
+.section.heading-section {
+border-top: none;
+padding: 20px 0 10px;
+clear: both;
+}
+
+.section.first {
+border-top: none;
+padding-top: 14px;
+}
+
+.section .sub-section {
+padding: 10px 0;
+}
+
+.section p {
+margin: 8px 0 0 0 !important;
+color: #777 !important;
+font-size: 11px !important;
+}
+
+.section.multi_upload-section p {
+margin: 12px 0 0 0 !important;
+}
+
+.section p.note {
+font-weight: bold;
+font-size: 13px !important;
+margin: -10px 0 24px 0 !important;
+text-decoration: underline;
+}
+
+.section.heading-section h4 {
+font-size: 14px !important;
+border-bottom: 3px solid #21759B;
+padding-bottom: 3px;
+margin-top: 0 !important;
+margin-bottom: 0 !important;
+color: #21759B;
+}
+
+.section .sep {
+height: 1px;
+padding: 0;
+margin: 20px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.section ul {
+margin: 0;
+}
+
+.section .field_repeatable li,
+.section.upload-section li {
+position: relative;
+}
+
+.section .field_repeatable li {
+margin-bottom: 15px;
+}
+
+.section .field_repeatable li .sort {
+margin-right: 5px;
+float: left;
+line-height: 26px;
+}
+
+.section .field_repeatable .sortable-highlight {
+border: 2px dashed #ccc;
+-webkit-border-radius: 5px;
+-moz-border-radius:    5px;
+border-radius:         5px;
+height: 30px;
+width: 475px;
+}
+
+.section .content-section-wrapper {
+-webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.15);
+-moz-box-shadow:    0 1px 7px rgba(0,0,0,0.15);
+box-shadow:         0 1px 7px rgba(0,0,0,0.15);
+border: 2px solid #888;
+overflow: hidden;
+}
+
+.section .content-section-wrapper .repeatable-remove {
+float: right;
+margin: 10px 10px 10px 5px;
+}
+
+.section .content-section-wrapper .handlediv {
+height: 28px !important;
+width: auto !important;
+margin: 10px 0 !important;
+}
+
+.js .content-section-wrapper.postbox .handlediv:before,
+.js .content-section-wrapper.postbox.closed .handlediv:before {
+    content: '';
+    right: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.section .content-section-header {
+padding: 7px 10px;
+-webkit-box-shadow: 0 1px 7px rgba(0,0,0,0.15);
+-moz-box-shadow:    0 1px 7px rgba(0,0,0,0.15);
+box-shadow:         0 1px 7px rgba(0,0,0,0.15);
+}
+
+.section .content-section-header .sort {
+margin-top: 3px;
+}
+
+.section .content-section-header select {
+margin-top: 3px;
+}
+
+.section .content-section-settings {
+border-top: 1px solid #aaa;
+margin-top: 0 !important;
+padding-top: 10px !important;
+}
+
+.section .upload-preview-img,
+.section .upload-preview-img {
+position: absolute;
+right: 0;
+bottom: 0;
+background: #fff;
+padding: 5px;
+border: 1px solid #aaa;
+-webkit-border-radius: 4px;
+-moz-border-radius:    4px;
+border-radius:         4px;
+-webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+-moz-box-shadow:    0 2px 10px rgba(0,0,0,0.2);
+box-shadow:         0 2px 10px rgba(0,0,0,0.2);
+}
+
+.section input[type="button"].add {
+margin-bottom: 5px;
+}
+
+.section.checkbox-section input {
+margin: 2px 8px 0 0;
+}
+
+.section label {
+display: inline-block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.section.checkbox-section label {
+margin-bottom: 0;
+}
+
+.section input[type="text"], .section textarea, .section select {
+width: 60%;
+max-width: 600px;
+min-width: 300px;
+}
+
+.section input[type="text"].medium, .section select.medium {
+width: 150px;
+min-width: 150px;
+}
+
+.section input[type="text"].small, .section select.small {
+width: 60px;
+min-width: 60px;
+}
+
+.section input[type="text"] {
+margin-top: 0 !important;
+}
+
+.section .mceIframeContainer {
+background: #fff;
+}
+
+@media screen and (max-width: 782px) {
+    .section .content-section-wrapper .handlediv {
+        height: auto !important;
+    }
+}

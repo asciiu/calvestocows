@@ -1,0 +1,502 @@
+/*
+Theme Name: Mango
+Description: Responsive multi-purpose wordpress theme. Suitable for portfolio/photography websites.
+Author: premitheme
+Author URI: http://premitheme.com
+Theme URI: http://themeforest.net/user/premitheme/portfolio
+Version: 1.0.2
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: white, black, light, dark, custom-background, custom-colors, featured-images, theme-options, post-formats, translation-ready, sticky-post, full-width-template, custom-menu, responsive-layout, right-sidebar, four-columns
+*/
+/* GLOBAL RESET
+==============================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ | v2.0b1 | 201101 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ADDITIONAL RESET RULES
+============================================== */
+iframe, object, embed {
+  display: block;
+}
+
+input:focus, textarea:focus, a {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ie8 img {
+  width: auto;
+}
+
+/* GRID SYSTEM - inspired by Skeleton by Dave Gamache (www.getskeleton.com)
+================================================== */
+.container {
+  position: relative;
+  width: 936px;
+  margin: 0 0 0 20px;
+  padding: 0 12px;
+}
+
+.container .column,
+.container .columns {
+  float: left;
+  display: inline;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.row {
+  margin-bottom: 24px;
+}
+
+.fullwidth-container {
+  position: relative;
+  width: 100%;
+}
+
+.padding-top {
+  padding-top: 24px;
+}
+
+.padding-bottom {
+  padding-bottom: 24px;
+}
+
+.container.alpha {
+  width: 948px;
+  padding-left: 0;
+}
+
+.container.omega {
+  width: 948px;
+  padding-right: 0;
+}
+
+.container.alpha.omega {
+  width: 960px;
+}
+
+.column.alpha, .columns.alpha {
+  margin-left: 0;
+}
+
+.column.omega, .columns.omega {
+  margin-right: 0;
+}
+
+.container .grid_1.column,
+.container .grid_1.columns {
+  width: 54px;
+}
+
+.container .grid_2.columns {
+  width: 132px;
+}
+
+.container .grid_3.columns {
+  width: 210px;
+}
+
+.container .grid_4.columns {
+  width: 288px;
+}
+
+.container .grid_5.columns {
+  width: 366px;
+}
+
+.container .grid_6.columns {
+  width: 444px;
+}
+
+.container .grid_7.columns {
+  width: 522px;
+}
+
+.container .grid_8.columns {
+  width: 600px;
+}
+
+.container .grid_9.columns {
+  width: 678px;
+}
+
+.container .grid_10.columns {
+  width: 756px;
+}
+
+.container .grid_11.columns {
+  width: 834px;
+}
+
+.container .grid_12.columns {
+  width: 912px;
+}
+
+.container .offset_1 {
+  padding-left: 78px;
+}
+
+.container .offset_2 {
+  padding-left: 156px;
+}
+
+.container .offset_3 {
+  padding-left: 234px;
+}
+
+.container .offset_4 {
+  padding-left: 312px;
+}
+
+.container .offset_5 {
+  padding-left: 390px;
+}
+
+.container .offset_6 {
+  padding-left: 468px;
+}
+
+.container .offset_7 {
+  padding-left: 546px;
+}
+
+.container .offset_8 {
+  padding-left: 624px;
+}
+
+.container .offset_9 {
+  padding-left: 702px;
+}
+
+.container .offset_10 {
+  padding-left: 780px;
+}
+
+.container .offset_11 {
+  padding-left: 858px;
+}
+
+@media only screen and (max-width: 999px) {
+  .container {
+    width: 704px;
+  }
+
+  .container.alpha {
+    width: 716px;
+    padding-left: 0;
+  }
+
+  .container.omega {
+    width: 716px;
+    padding-right: 0;
+  }
+
+  .container.alpha.omega {
+    width: 728px;
+  }
+
+  .container .grid_1.column,
+  .container .grid_1.columns {
+    width: 34.66667px;
+  }
+
+  .container .grid_2.columns {
+    width: 93.33333px;
+  }
+
+  .container .grid_3.columns {
+    width: 152px;
+  }
+
+  .container .grid_4.columns {
+    width: 210.66667px;
+  }
+
+  .container .grid_5.columns {
+    width: 269.33333px;
+  }
+
+  .container .grid_6.columns {
+    width: 328px;
+  }
+
+  .container .grid_7.columns {
+    width: 386.66667px;
+  }
+
+  .container .grid_8.columns {
+    width: 445.33333px;
+  }
+
+  .container .grid_9.columns {
+    width: 504px;
+  }
+
+  .container .grid_10.columns {
+    width: 562.66667px;
+  }
+
+  .container .grid_11.columns {
+    width: 621.33333px;
+  }
+
+  .container .grid_12.columns {
+    width: 680px;
+  }
+
+  .container .offset_1 {
+    padding-left: 58.66667px;
+  }
+
+  .container .offset_2 {
+    padding-left: 117.33333px;
+  }
+
+  .container .offset_3 {
+    padding-left: 176px;
+  }
+
+  .container .offset_4 {
+    padding-left: 234.66667px;
+  }
+
+  .container .offset_5 {
+    padding-left: 293.33333px;
+  }
+
+  .container .offset_6 {
+    padding-left: 352px;
+  }
+
+  .container .offset_7 {
+    padding-left: 410.66667px;
+  }
+
+  .container .offset_8 {
+    padding-left: 469.33333px;
+  }
+
+  .container .offset_9 {
+    padding-left: 528px;
+  }
+
+  .container .offset_10 {
+    padding-left: 586.66667px;
+  }
+
+  .container .offset_11 {
+    padding-left: 645.33333px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 416px;
+  }
+
+  .container.alpha {
+    width: 428px;
+    padding-left: 0;
+  }
+
+  .container.omega {
+    width: 428px;
+    padding-right: 0;
+  }
+
+  .container.alpha.omega {
+    width: 440px;
+  }
+
+  .container .grid_1.column,
+  .container .grid_1.columns,
+  .container .grid_2.columns,
+  .container .grid_3.columns,
+  .container .grid_4.columns,
+  .container .grid_5.columns,
+  .container .grid_6.columns,
+  .container .grid_7.columns,
+  .container .grid_8.columns,
+  .container .grid_9.columns,
+  .container .grid_10.columns,
+  .container .grid_11.columns,
+  .container .grid_12.columns {
+    width: 392px;
+  }
+
+  .container .offset_1,
+  .container .offset_2,
+  .container .offset_3,
+  .container .offset_4,
+  .container .offset_5,
+  .container .offset_6,
+  .container .offset_7,
+  .container .offset_8,
+  .container .offset_9,
+  .container .offset_10,
+  .container .offset_11 {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .container {
+    width: 256px;
+  }
+
+  .container.alpha {
+    width: 268px;
+    padding-left: 0;
+  }
+
+  .container.omega {
+    width: 268px;
+    padding-right: 0;
+  }
+
+  .container.alpha.omega {
+    width: 280px;
+  }
+
+  .container .grid_1.column,
+  .container .grid_1.columns,
+  .container .grid_2.columns,
+  .container .grid_3.columns,
+  .container .grid_4.columns,
+  .container .grid_5.columns,
+  .container .grid_6.columns,
+  .container .grid_7.columns,
+  .container .grid_8.columns,
+  .container .grid_9.columns,
+  .container .grid_10.columns,
+  .container .grid_11.columns,
+  .container .grid_12.columns {
+    width: 232px;
+  }
+
+  .container .offset_1,
+  .container .offset_2,
+  .container .offset_3,
+  .container .offset_4,
+  .container .offset_5,
+  .container .offset_6,
+  .container .offset_7,
+  .container .offset_8,
+  .container .offset_9,
+  .container .offset_10,
+  .container .offset_11 {
+    padding-left: 0;
+  }
+}
+/* Clearing
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*==============================================
+The rest of CSS located in /css
+==============================================*/
